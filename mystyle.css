@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    background: #010036;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-image:url(technology-background-modern-bright-grey-geometric-decor-v_1638816jpg!sw800.jpg)
+  }
+  
+  .header h1 {
+    font-size: 100px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff,
+  0 0 15px #25379c, 0 0 20px #259c83, 0 0 25px #259c83, 
+  0 0 30px #259c83, 0 0 35px #259c83;
+  color: #000000;
+  }
+  .header h3 {
+    font-size: 30px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff,
+  0 0 15px #259c83, 0 0 20px #259c83, 0 0 25px #259c83, 
+  0 0 30px #259c83, 0 0 35px #259c83;
+  color: #000000;
+  }
+  .topnav {
+    width: 100%;
+    background-color: #020070;
+    overflow: auto;
+  }
+  
+  .topnav a {
+    float: left;
+    padding: 12px;
+    color: rgb(255, 250, 250);
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #3d3b81;
+  }
+  
+  .active {
+    background-color: #424085;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .topnav a {
+      float: none;
+      display: block;
+    }
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 80%;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .card p {
+    border-style: groove;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(odd){background-color: #f2f2f2;}
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #635d5b;
+  color: white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+.grid-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5%;
+    transition: 40px;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background: linear-gradient(
+      #363636 0%,
+      #ffffff 50%,
+      #ffffffde 70%,
+      #3e3e3eb6 75%,
+      #5c5b5b7e 100%,
+    );
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+input[type=submit]:hover {
+    background-color: #858585;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+}
+  
+.form2{
+    padding: 20px;
+    background-color: #a1a1a1;
+}
+
+.tittle{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.nm{
+    color: #000000;
+    font-size: 15px;
+}
